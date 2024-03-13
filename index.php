@@ -12,7 +12,7 @@ include("Database.php");
 </head>
 <body>
 <div class="wrapper">
-        <span class="icon-close"><i class='bx bx-x'></i></span>
+        <span class="icon-close" ><a href="index.html"><i class='bx bx-x'></i></a></span>
         <div class="form-box-login">
             <h2>Login</h2>
             <form action="#">
