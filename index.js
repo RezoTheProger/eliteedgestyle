@@ -25,10 +25,11 @@ loginlink.addEventListener('click',()=>{
     wrapper.classList.remove('active');
 })
 btnLoginPop.addEventListener('click' ,()=>{
+    window.location.href("index.php");
     wrapper.classList.add('active-popup');
 })
 iconclose.addEventListener('click' ,()=>{
-    wrapper.classList.remove('active-popup');
+    window.location.href("index.html");
     console.log('delete')
 })
 
