@@ -1,4 +1,7 @@
+<?php
+    session_start();
 
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -24,11 +27,11 @@
      <header><a href="#" class="logo"><img src="img/Black_and_White_Minimalist_Sport-removebg-preview.png" ></a>
     
         <ul class="navList">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#trending">Trending</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#newsletter">NewsLetter</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="index.php#home">Home</a></li>
+            <li><a href="index.php#trending">Trending</a></li>
+            <li><a href="index.php#services">Services</a></li>
+            <li><a href="index.php#newsletter">NewsLetter</a></li>
+            <li><a href="index.php#contact">Contact</a></li>
 
 
 
@@ -36,10 +39,20 @@
         <div class="nav-right">
             <a href=""><i class="ri-search-line"></i></a>
             <a href=""><i class="ri-star-fill"></i></a>
-            <a  class="login-btn" ><i class="ri-user-fill"></i></a>
+            <?php
+            
+            if(isset($_SESSION["username"])){
+                echo "<a  href='profile.php' ><i class='bx bxs-user-circle'></i></a>";  
+            }
+            else{
+               echo" <a  href='signup.php' ><i class='ri-user-fill'></i></a>";
+            }
+            ?>
+            
+            
             <div class="bx bx-menu" id="menu-icon"></div>
         </div>
 
     </header>
     
-    <div class="wrapper">
+    

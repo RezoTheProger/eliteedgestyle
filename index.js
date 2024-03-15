@@ -12,26 +12,6 @@ window.onscroll= ()=>{
     navlist.classList.remove('open');
 }
 
-const wrapper =document.querySelector('.wrapper');
-const loginlink =document.querySelector('.login-link');
-const registerlink =document.querySelector('.register-link');
-const iconclose =document.querySelector('.icon-close');
-const btnLoginPop=document.querySelector('.login-btn');
-
-registerlink.addEventListener('click',()=>{
-    wrapper.classList.add('active');
-})
-loginlink.addEventListener('click',()=>{
-    wrapper.classList.remove('active');
-})
-btnLoginPop.addEventListener('click' ,()=>{
-    wrapper.classList.add('active-popup');
-})
-iconclose.addEventListener('click' ,()=>{
-    wrapper.classList.remove('active-popup');
-    console.log('delete')
-})
-
 
 
 const scriptURL = 'https://script.google.com/macros/s/AKfycbxPIr-bCbUbzuHbGbGiH7nsVCiL1c4-sq5y-J2oUnoEAXVwVtfQd1WbHjyK0Aduf80/exec'
@@ -50,3 +30,5 @@ const scriptURL = 'https://script.google.com/macros/s/AKfycbxPIr-bCbUbzuHbGbGiH7
         })
         .catch(error => console.error('Error!', error.message))
     })
+
+
