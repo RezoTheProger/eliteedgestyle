@@ -11,6 +11,8 @@
     
     <title>EliteEdgeStyle</title>
     <link rel ="stylesheet" href ="style.css">
+    <link rel ="stylesheet" href ="profile.css">
+
     <link rel="stylesheet"
     href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
     <link
@@ -40,9 +42,10 @@
             <a href=""><i class="ri-search-line"></i></a>
             <a href=""><i class="ri-star-fill"></i></a>
             <?php
-            
             if(isset($_SESSION["username"])){
-                echo "<a  href='profile.php' ><i class='bx bxs-user-circle'></i></a>";  
+                $username= $_SESSION["username"];
+
+                echo "<a  href='profile.php' > $username </a>";  
             }
             else{
                echo" <a  href='signup.php' ><i class='ri-user-fill'></i></a>";

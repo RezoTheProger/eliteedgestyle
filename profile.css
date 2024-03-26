@@ -1,0 +1,131 @@
+:root{
+    --input-sz: 1rem;
+    --h3-sz: .9rem;
+}
+
+.profile{
+    padding: 0;
+    width: 90%;
+    height: 100vh;
+    
+}
+.bg{
+position: absolute;
+    background-image: url(img/beautiful-second-hand-market.jpg);
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(4px);
+    z-index: -1;
+    
+}
+.profileWrapper{
+    
+    z-index: 50;
+    background-color: beige;
+    width: 90%;
+    height: 90%;
+    margin: auto;
+    position: relative;
+    top: 40px;
+    border-radius: 35px;
+    border: 2px solid;
+    box-shadow: 0 0 50px 5px black;
+    display: grid;
+    grid-template-columns: 30% 1fr;
+}
+.account-info{
+    background-color: white;
+    border-right: 2px solid;
+   
+    
+}
+.account-info h1{
+    font-size: 1.2rem;
+    border-bottom: 2px solid;
+}
+.link-manager{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+.link-manager a{
+    padding: 10px;
+    color: black;
+    border-bottom: 1px solid ;
+}
+.log-out{
+    height: 40px;
+    background-color: red;
+    width: 30%;
+    cursor: pointer;
+    position: absolute;
+    bottom: 0px;
+}
+
+.profile-nav-bar{
+    background-color: beige;
+    border: 2px solid;
+}
+ .account-section {
+    overflow: scroll;
+
+width: 100%;
+height: 100%;
+display: flex;
+flex-direction: column;
+}
+.save-changer{
+    position: relative;
+    top: 20px;
+}
+.changer{
+   
+    display: flex;
+    justify-content: space-evenly;
+}
+.changer h3{
+    font-size: var(--h3-sz);
+}
+.changer input{
+    font-size: var(--input-sz);
+    width: 400px;
+}
+.save{
+    position: relative;
+    left: 80%;
+    width: 80px;
+    background: #ffea00;
+    color: black;
+    border: 1px solid #d0d069;
+    border-radius: 15px;
+    }
+.changer textarea{
+   width: 400px;
+   height: 100px;
+}
+.img-changer{
+    height: 300px;
+    width: 300px;
+    position: relative;
+    border: 5px solid;
+    border-radius: 50%;
+    background: url("img/n6.png");
+    background-size: 100% 100%;
+    overflow: hidden;
+}
+.img-input{
+    height: 300px;
+    width: 300px;
+    
+    outline: none;
+    border-radius: 50%;
+    color: transparent;
+    cursor: pointer;
+    
+}
+.img-input::-webkit-file-upload-button{
+    visibility: hidden;
+
+}

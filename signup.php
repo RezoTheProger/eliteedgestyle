@@ -21,7 +21,7 @@ include_once("header.php");
             echo"<p>Account Does Not Exist</p>";
         }
         if($_GET["error"] == "wrongPwd"){
-            echo"<p>Wrong Password, Try Again!</p>";
+            echo"<p>Wrong Login Or Password, Try Again!</p>";
         }
 
 
@@ -46,7 +46,7 @@ include_once("header.php");
                 </div>
                 <div class="remember">
                     <label ><input type="checkbox">Remember me</label>
-                    <a href="#">Forgot password?</a>
+                    <a href='GmailList.php' target='GmailList.php'>Forgot password?</a>
                 </div>
                 <button type="submit" name="loginSubmit" value="Login" class="btn-login">Login</button>
                 <div class="login-register">

@@ -523,6 +523,54 @@ transition: all .5s ease;
 .login-register p a{
     text-decoration: underline;
 }
+.RecoverBody{
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    background: url(img/5183000.jpg);
+    background-size: auto;
+    background-repeat: no-repeat;
+}
+.EmailWrapper{
+    width: 400px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    
+    border: 2px solid;
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0, 0, 0,.5);
+
+    background: #ffc633;
+    margin: 60px;
+}
+.EmailIn{
+    width: 300px;
+    height: 50px;
+    margin-top: 100px;
+}
+.EmailSubmit{
+    margin-top: 80px;
+    width: 80%;
+    height: 45px;
+    background: #162938;
+    border: none;
+    outline: none;
+    margin-left:10%;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+    color: #fff;
+    font-weight: 500;
+}
+
+
+
+
+
+
+
 
 
 
@@ -625,6 +673,45 @@ transition: all .5s ease;
     .nav-right{
         margin-right: 7px ;
     }
+    
+
+.wrapper .icon{
+   
+    font-size: 0.8rem;
+}
+.wrapper .form-box-login {
+    padding: 20px;
+}
+.form-box-login h2{
+    font-size: 1.2rem;
+    color:#162938 ;
+    text-align: center;
+}
+.input-box input{
+
+    font-size: .5rem;
+    color: #162938;
+    font-weight: 400;
+    padding: 0 35px 0 5px;
+}
+.remember{
+    font-size: 0.65rem;
+
+}
+.btn-login{
+
+    height: 30px;
+    
+    
+    font-size: .8rem;
+    
+
+}
+.login-register{
+    font-size:.7rem ;
+
+}
+
 }
 @media(max-width: 400px){
     .newsletter-content form input:first-child{
